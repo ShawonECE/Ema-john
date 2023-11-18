@@ -22,7 +22,7 @@ function App() {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/all_products')
+    fetch('https://ema-john-server-34ue.onrender.com/all_products')
     .then(res => res.json())
     .then(data => setAllProducts(data));
   }, []);

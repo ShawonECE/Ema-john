@@ -40,7 +40,7 @@ const Shipment = () => {
         newInfo.products = cart;
         newInfo.user = loggedInUser;
         console.log(newInfo);
-        fetch('http://localhost:4000/place_order', {
+        fetch('https://ema-john-server-34ue.onrender.com/place_order', {
             method: 'POST',
             body: JSON.stringify(newInfo),
             headers: {
